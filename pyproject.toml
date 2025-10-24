@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "hpinv_enums"
+version = "0.0.1"
+authors = [
+    { name="Austin Snyder", email="austin-snyder@uiowa.edu" },
+]
+description = "Internal enums representing the different HPINV fields and their associated values."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []

@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: hpinv_enums
+Version: 0.0.1
+Summary: Internal enums representing the different HPINV fields and their associated values.
+Author-email: Austin Snyder <austin-snyder@uiowa.edu>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

@@ -1,0 +1,7 @@
+pyproject.toml
+src/hpinv_enums/__init__.py
+src/hpinv_enums/main_enums.py
+src/hpinv_enums.egg-info/PKG-INFO
+src/hpinv_enums.egg-info/SOURCES.txt
+src/hpinv_enums.egg-info/dependency_links.txt
+src/hpinv_enums.egg-info/top_level.txt
