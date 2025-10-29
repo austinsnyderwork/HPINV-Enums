@@ -37,9 +37,9 @@ class ActiveStatusValue(Enum):
 class WorksiteColumn(Enum):
     WORKSITE_ID = 'worksiteid'
     WORKSITE_NAME = 'worksitename'
-    PARENT_WORKSITE_ID = 'parentworksiteid'
+    PARENT_WORKSITE_ID = 'parentworksite'
     PARENT_WORKSITE_NAME = 'parentworksitename'
-    ACTIVE_STATUS = 'detailactive'
+    ACTIVE_STATUS = 'transactionid'
     PHONE = 'phone'
     CITY = 'city'
     ADDRESS_1 = 'address1'
@@ -76,3 +76,4 @@ class HcpPositionColumn(Enum):
     PERCENT_MEDICAID = 'pctmedicaid'
     PERCENT_SLIDING_FEE = 'pctslidingfee'
     TRANSACTION_ID = 'transactionid'
+
