@@ -1,5 +1,6 @@
 from .main_enums import (
-    TypeId, TransactionId, Activity, WorksiteType, ActiveStatusValue, WorksiteColumn,
-    HcpColumn, AuxiliaryColumn, HcpPositionColumn
+    TypeId, TransactionId, Activity, WorksiteType, ActiveStatus, WorksiteColumn,
+    HcpColumn, AuxiliaryColumn, HcpPositionColumn, HpinvTable, WorksiteDetailColumn,
+    EducationColumn, TrainingColumn, SchoolColumn
 )
 

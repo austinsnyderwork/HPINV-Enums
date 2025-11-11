@@ -2,6 +2,15 @@
 from enum import Enum
 
 
+class HpinvTable(Enum):
+    WORKSITE = 'Worksite'
+    WORKSITE_DETAIL = 'WorksiteDetail'
+    HCP = 'Hcp'
+    WORKSITE_HISTORY = 'WorksiteHistory'
+    EDUCATION = 'Education'
+    SCHOOL = 'School'
+    TRAINING = 'Training'
+
 class TypeId(Enum):
     PHY = 'PHY'
     PA = 'PA'
@@ -29,7 +38,7 @@ class WorksiteType(Enum):
     SECONDARY = 'S'
 
 
-class ActiveStatusValue(Enum):
+class ActiveStatus(Enum):
     ACTIVE = 'ACT'
     INACTIVE = 'I'
 
@@ -46,8 +55,15 @@ class WorksiteColumn(Enum):
     ADDRESS_2 = 'address2'
     STATE = 'state'
     ZIP = 'zip'
+    COUNTY_ID = 'countyid'
     CALL_DATE = 'calldate'
     MEMO = 'memo'
+    LATITUDE = 'latitude'
+    LONGITUDE = 'longitude'
+
+
+class WorksiteDetailColumn(Enum):
+    TYPE_ID = 'typeid'
 
 
 class HcpColumn(Enum):
@@ -55,6 +71,38 @@ class HcpColumn(Enum):
     TYPE_ID = 'typeid'
     FIRST_NAME = 'firstname'
     LAST_NAME = 'lastname'
+    GENDER = 'gender'
+    TITLE = 'title'
+    BIRTH_DATE = 'birthdate'
+    BIRTH_STATE = 'birthstate'
+    LICENSE_NUMBER = 'licensenumber'
+    NPI_NUMBER = 'npinumber'
+
+
+class EducationColumn(Enum):
+    SCHOOL_ID = 'schoolid'
+    TYPE_ID = 'typeid'
+    SCHOOL_STATE = 'state'
+    DEGREE_ID = 'degreeid'
+    GRAD_YEAR = 'gradyear'
+    TERMINAL_DEGREE = 'terminaldegflag'
+
+
+class SchoolColumn(Enum):
+    TYPE_ID = 'typeid'
+    SCHOOL_ID = 'schoolid'
+    SCHOOL_STATE = 'state'
+
+class TrainingColumn(Enum):
+    TRAINING_SITE_ID = 'trainingsiteid'
+    SPECIALTY_ID = 'specialtyid'
+    TRAINING_TYPE_ID = 'trainingtypeid'
+    GRAD_YEAR = 'gradyear'
+
+class SchoolColumn(Enum):
+    TYPE_ID = 'typeid'
+    SCHOOL_ID = 'schoolid'
+    SCHOOL_STATE = 'state'
 
 
 class AuxiliaryColumn(Enum):
@@ -65,8 +113,11 @@ class AuxiliaryColumn(Enum):
 
 
 class HcpPositionColumn(Enum):
+    HCP_ID = 'hcpid'
+    WORKSITE_ID = 'worksiteid'
     WORKSITE_HISTORY_ID = 'worksitehistoryid'
     EFFECT_DATE = 'effectdate'
+    ADMIN_DATE = 'admindate'
     SPECIALTY_NAME = 'specialtyname'
     FTE = 'fte'
     WORKSITE_TYPE = 'worksitetype'
@@ -76,4 +127,5 @@ class HcpPositionColumn(Enum):
     PERCENT_MEDICAID = 'pctmedicaid'
     PERCENT_SLIDING_FEE = 'pctslidingfee'
     TRANSACTION_ID = 'transactionid'
+    SPECIALTY_ID = 'specialtyid'
 
