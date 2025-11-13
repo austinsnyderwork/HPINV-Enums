@@ -1,4 +1,3 @@
-
 from enum import Enum
 
 
@@ -11,12 +10,16 @@ class HpinvTable(Enum):
     SCHOOL = 'School'
     TRAINING = 'Training'
 
+
 class TypeId(Enum):
     PHY = 'PHY'
     PA = 'PA'
     APN = 'APN'
     DDS = 'DDS'
     PHA = 'PHA'
+    OTH = 'OTH'
+    PCO = 'PCO'
+    IDK_WHAT_THIS_IS = 'RS'
 
 
 class TransactionId(Enum):
@@ -56,14 +59,16 @@ class WorksiteColumn(Enum):
     STATE = 'state'
     ZIP = 'zip'
     COUNTY_ID = 'countyid'
-    CALL_DATE = 'calldate'
-    MEMO = 'memo'
     LATITUDE = 'latitude'
     LONGITUDE = 'longitude'
 
 
 class WorksiteDetailColumn(Enum):
+    WORKSITE_ID = 'worksiteid'
     TYPE_ID = 'typeid'
+    CALL_DATE = 'calldate'
+    ACTIVE_STATUS = 'transactionid'
+    MEMO = 'memo'
 
 
 class HcpColumn(Enum):
@@ -93,16 +98,12 @@ class SchoolColumn(Enum):
     SCHOOL_ID = 'schoolid'
     SCHOOL_STATE = 'state'
 
+
 class TrainingColumn(Enum):
     TRAINING_SITE_ID = 'trainingsiteid'
     SPECIALTY_ID = 'specialtyid'
     TRAINING_TYPE_ID = 'trainingtypeid'
     GRAD_YEAR = 'gradyear'
-
-class SchoolColumn(Enum):
-    TYPE_ID = 'typeid'
-    SCHOOL_ID = 'schoolid'
-    SCHOOL_STATE = 'state'
 
 
 class AuxiliaryColumn(Enum):
@@ -128,4 +129,3 @@ class HcpPositionColumn(Enum):
     PERCENT_SLIDING_FEE = 'pctslidingfee'
     TRANSACTION_ID = 'transactionid'
     SPECIALTY_ID = 'specialtyid'
-
